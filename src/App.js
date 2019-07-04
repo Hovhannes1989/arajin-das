@@ -1,5 +1,13 @@
+
 import React from 'react';
+
+import Header from './components/Header';
+import SideBar from './components/SideBar';
+import Content from './components/Content';
+import Footer from './components/Footer';
+
 import './App.css';
+
 
 class App extends React.Component {
   state = {
@@ -21,19 +29,19 @@ class App extends React.Component {
     return null;
   }
   onClickHandler(e) {
-    this.setState({country: "USA"})
+    this.setState({ country: "USA" })
   }
   render() {
-    console.log("render");
+
     return (
-      <div>
-        hello world {this.state.country}
-        <br/>
-        <button onClick={this.onClickHandler}>
-          poxel text@
-        </button>
-      </div>
-    )
+      <>
+        <Header />
+        <SideBar />
+        <Content />
+        <Footer />
+      </>
+
+    );
   }
 }
 
