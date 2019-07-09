@@ -1,10 +1,11 @@
 import React from 'react';
+import './Sidebar.css'
 
 function SideBar(){
     return(
-        <sidebar>
-            SideBar
-        </sidebar>
+        <div className="burger">
+
+        </div>
     )
 }
 export default SideBar;
