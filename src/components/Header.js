@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.css';
 import { Button } from "reactstrap";
+import {NavLink} from 'react-router-dom';
 
 function Header(props) {
     return (
@@ -13,10 +14,9 @@ function Header(props) {
             </Button>
             <nav className="logo">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="#">Contact</a></li>
-
+                    <li><NavLink exact to="/"activeClassName="active">Home</NavLink></li>
+                    <li><NavLink to="/contact"activeClassName="active">Contact</NavLink></li>
+                    <li><NavLink to="/about"activeClassName="active">About</NavLink></li>
                 </ul>
             </nav>
         </header>

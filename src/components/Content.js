@@ -1,10 +1,10 @@
 import React from 'react';
 import './Content.css';
 
-function Content(){
-    return(
+function Content(props) {
+    return (
         <main>
-            Content
+            {props.children}
         </main>
     )
 }
